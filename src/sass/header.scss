@@ -1,0 +1,110 @@
+@include breakpoint($desktop) {
+	header {
+		font-family: "Source Sans Pro", sans-serif;
+		background-image: url("./images/aaron_5.jpg");
+		// background-position: -310px 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 90vh;
+		padding: 1rem;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+
+		.flex {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#aaronLogoLink {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+			font-size: 22px;
+			font-weight: 600;
+			letter-spacing: 0.33px;
+			padding: 1rem;
+
+			span {
+				font-weight: 300;
+				text-transform: capitalize;
+			}
+		}
+
+		#heroText {
+			color: #d5874c;
+			font-size: 68px;
+			font-weight: 300;
+			position: absolute;
+			left: 10%;
+			top: 33%;
+			h2 {
+				margin-bottom: 2rem;
+			}
+			br {
+				display: none;
+			}
+			a {
+				padding: 1rem 2rem;
+				color: white;
+				border: 1px solid #f4a76c;
+				text-decoration: none;
+				font-size: 24px;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+			}
+		}
+	}
+}
+
+@include breakpoint(0, $mobile) {
+	header {
+		font-family: "Source Sans Pro", sans-serif;
+		background-image: url("../../images/aaron_1.jpg");
+		background-position: -50px 0px;
+		height: 558px;
+		padding: 1rem;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+
+		#aaronLogoLink {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+			font-size: 16px;
+			font-weight: 600;
+
+			span {
+				font-weight: 300;
+				text-transform: capitalize;
+			}
+		}
+
+		#heroText {
+			color: #d5874c;
+			font-size: 38px;
+			font-weight: 300;
+			position: absolute;
+			right: 3rem;
+			bottom: 6rem;
+			h2 {
+				margin-bottom: 1rem;
+			}
+			a {
+				padding: 0.5rem 1.5rem;
+				color: white;
+				border: 1px solid #f4a76c;
+				text-decoration: none;
+				font-size: 16px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

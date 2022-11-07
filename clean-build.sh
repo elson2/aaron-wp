@@ -1,3 +1,5 @@
 #!/bin/sh
-rm -rf ./dist
+targetPath=./public/wp-content/themes/aaron
+
+rm -rf $targetPath
 ./build.sh

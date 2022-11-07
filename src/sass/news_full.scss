@@ -1,0 +1,57 @@
+@include breakpoint($desktop) {
+	#full_news {
+		padding: 2rem;
+
+		#news_heading {
+			display: flex;
+			flex-direction: column;
+			padding: 2rem 2rem 2rem;
+			h2 {
+				font: normal normal 300 38px/47px Source Sans Pro;
+				color: #d5874c;
+			}
+			p {
+				font: normal normal 300 22px/37px Source Sans Pro;
+				color: #363636;
+				font-style: italic;
+			}
+		}
+		#news_content {
+			p {
+				text-align: left;
+				font: normal normal 300 22px/37px Source Sans Pro;
+				color: #363636;
+				padding: 0 2rem 2rem 2rem;
+			}
+		}
+	}
+}
+
+@include breakpoint(0, $mobile) {
+	#full_news {
+		padding: 2rem;
+
+		#news_heading {
+			display: flex;
+			flex-direction: column;
+			padding: 2rem 2rem 2rem;
+			h2 {
+				font: normal normal 300 38px/47px Source Sans Pro;
+				color: #d5874c;
+			}
+			p {
+				font: normal normal 300 22px/37px Source Sans Pro;
+				color: #363636;
+				font-style: italic;
+			}
+		}
+		#news_content {
+			p {
+				text-align: left;
+				font: normal normal 300 22px/37px Source Sans Pro;
+				color: #363636;
+				padding: 0 2rem 2rem 2rem;
+			}
+		}
+	}
+}

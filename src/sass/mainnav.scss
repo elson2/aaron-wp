@@ -1,0 +1,28 @@
+@include breakpoint($desktop) {
+	#mainnav {
+		ul {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: flex-end;
+			flex-direction: row;
+			gap: 1.5rem;
+			padding: 1rem;
+
+			a {
+				text-align: left;
+				font: normal normal 600 22px/28px Source Sans Pro;
+				letter-spacing: 0.33px;
+				color: #ffad6e;
+				text-transform: uppercase;
+				opacity: 1;
+				list-style-type: none;
+				text-decoration: none;
+				border-bottom: #ffad6e 1px solid;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
