@@ -120,8 +120,7 @@
 				<p class="text_about">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque
 					incidunt, nihil, recusandae autem aut perferendis reiciendis a neque
-					veniam quibusdam animi ex tempora reprehenderit, aspernatur asperiores
-					consequatur consectetur ipsum!
+					veniam quibusdam animi
 				</p>
 				<p class="text_about">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque
