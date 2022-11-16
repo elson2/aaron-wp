@@ -20,4 +20,9 @@ host('193.170.119.197')
 
 // Hooks
 
+task('deploy', [
+    'deploy:prepare',
+    'deploy:publish',
+]);
+
 after('deploy:failed', 'deploy:unlock');
