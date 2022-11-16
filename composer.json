@@ -1,0 +1,17 @@
+{
+    "name": "elson/aaron-wp",
+    "autoload": {
+        "psr-4": {
+            "Elson\\AaronWp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elias Fellinger",
+            "email": "efellinger.mmt-b2021@fh-salzburg.ac.at"
+        }
+    ],
+    "require-dev": {
+        "deployer/deployer": "^7.0"
+    }
+}
