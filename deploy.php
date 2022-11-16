@@ -11,6 +11,8 @@ add('shared_files', []);
 add('shared_dirs', []);
 add('writable_dirs', []);
 
+set('shared_files', ['public/wp-config.php']);
+set('shared_dirs', ['public/wp-content/uploads']);
 // Hosts
 
 host('193.170.119.197')
