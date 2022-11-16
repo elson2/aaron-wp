@@ -11,9 +11,12 @@
  *
  * @var bool
  */
-// define( 'WP_USE_THEMES', true );
 
-// /** Loads the WordPress Environment and Template */
-// require __DIR__ . '/wp-blog-header.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-echo phpinfo();
+define( 'WP_USE_THEMES', true );
+
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';
