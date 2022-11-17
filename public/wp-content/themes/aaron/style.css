@@ -617,7 +617,7 @@ table {
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   header {
     font-family: "Source Sans Pro", sans-serif;
-    background-image: url("../../images/aaron_1.jpg");
+    background-image: url("./images/aaron_1.jpg");
     background-position: -50px 0px;
     height: 558px;
     padding: 1rem;
