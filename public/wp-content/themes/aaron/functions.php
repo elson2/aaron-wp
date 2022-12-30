@@ -12,3 +12,4 @@ function cc_mime_types($mimes)
 	return $mimes;
 }
 add_filter('upload_mimes', 'cc_mimes_types');
+add_theme_support('post-thumbnails');
