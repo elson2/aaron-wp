@@ -11,7 +11,7 @@ add('writable_dirs', []);
 
 set('shared_files', [
     'public/wp-config.php',
-    '.htaccess'
+    'public/.htaccess'
 ]);
 
 set('shared_dirs', ['public/wp-content/uploads']);
