@@ -113,24 +113,23 @@
 		</section>
 
 		<section id="about">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/aaron_2.jpg" alt="Aaron Miller sideprofile" />
-			<div>
-				<p class="super-headline">Why I teach</p>
-				<h2>Hi, I'm Aaron!</h2>
-				<p class="text_about">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque
-					incidunt, nihil, recusandae autem aut perferendis reiciendis a neque
-					veniam quibusdam animi
-				</p>
-				<p class="text_about">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque
-					incidunt, nihil, recusandae autem aut perferendis reiciendis a neque
-					veniam quibusdam animi ex tempora reprehenderit, aspernatur asperiores
-					consequatur consectetur ipsum! Lorem ipsum dolor sit amet consectetur
-					adipisicing elit.
-				</p>
-				<a>Learn more</a>
-			</div>
+			<?php
+			$aboutme_query = new WP_Query(array('p' => 8));
+			if ($aboutme_query->have_posts()) :
+				while ($aboutme_query->have_posts()) : $aboutme_query->the_post();
+			?>
+					<img src="<?php echo get_template_directory_uri(); ?>/images/aaron_2.jpg" alt="Aaron Miller sideprofile" />
+					<div>
+						<p class="super-headline"><?php echo get_post_custom_values('super-headline')[0] ?></p>
+						<h2><?php the_title(); ?></h2>
+						<p class="text_about">
+							<?php the_content(); ?>
+						</p>
+						<a>Learn more</a>
+					</div>
+				<?php endwhile; ?>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
 		</section>
 		<section id="news">
 			<p class="super-headline">Making waves since 2004</p>
