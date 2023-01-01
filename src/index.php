@@ -38,7 +38,10 @@
 
 			<div id="level-grid">
 				<?php
-				$level_query = new WP_Query(array('category_name' => 'level '));
+				$level_query = new WP_Query(array(
+					'category_name' => 'level ', 'order' => 'ASC',
+					'orderby' => 'ID',
+				));
 				if ($level_query->have_posts()) :
 					while ($level_query->have_posts()) : $level_query->the_post();
 				?>
