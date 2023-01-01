@@ -1,7 +1,7 @@
 <footer>
     <div>
         <h4>Thank you for your interest in Art!</h4>
-        <p>© 2004 – Aaron G. Miller</p>
+        <p>© 2004 - <?php echo date("Y"); ?> Aaron G. Miller</p>
     </div>
     <div>
         <a href="#">Imprint & Privacy</a>
