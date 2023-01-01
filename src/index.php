@@ -122,7 +122,7 @@
 								the_post_thumbnail();
 							}
 							?>
-							<span class=" text_news"><?php the_content(); ?></span>
+							<div class=" text_news"><?php the_content(); ?></div>
 							<a href="" class="button">Read more</a>
 						</article>
 
