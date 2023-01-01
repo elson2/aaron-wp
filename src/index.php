@@ -92,9 +92,9 @@
 					<div>
 						<p class="super-headline"><?php echo get_post_custom_values('super-headline')[0] ?></p>
 						<h2><?php the_title(); ?></h2>
-						<p class="text_about">
+						<span class="text_about">
 							<?php the_content(); ?>
-						</p>
+						</span>
 						<a>Learn more</a>
 					</div>
 				<?php endwhile; ?>
