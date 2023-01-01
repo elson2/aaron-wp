@@ -37,78 +37,42 @@
 			<h2>If you never start, you will never know.</h2>
 
 			<div id="level-grid">
-				<div class="level" id="level-1">
-					<div class="icon-circle">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/stretch.svg" alt="Icon showing dancer stretching her leg up to her nose." />
-						<p>3</p>
-					</div>
+				<?php
+				$level_query = new WP_Query(array('category_name' => 'level '));
+				if ($level_query->have_posts()) :
+					while ($level_query->have_posts()) : $level_query->the_post();
+				?>
 
-					<div class="level-text">
-						<div>
-							<h3>As pro as you can get</h3>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-								consectetur maxime excepturi. Excepturi, cumque eum!
-							</p>
+						<div class="level" id="level-<?php echo get_post_custom_values('level-id')[0] ?>">
+							<div class="icon-circle">
+								<?php if (has_post_thumbnail()) {
+									the_post_thumbnail();
+								}
+								?>
+								<p><?php echo get_post_custom_values('level')[0] ?></p>
+							</div>
+
+							<div class="level-text">
+								<div>
+									<h3><?php the_title(); ?></h3>
+									<p>
+										<?php the_content(); ?>
+									</p>
+								</div>
+								<a href="#" class="button">Book Workshop</a>
+							</div>
+
+							<div class="quote-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/quote.svg" alt="quote sign" class="quote-icon" />
+								<blockquote><?php echo get_post_custom_values('level-slogan')[0] ?></blockquote>
+							</div>
+							<p class="apply">Apply for an audition now!</p>
 						</div>
-						<a href="#" class="button">Book Workshop</a>
-					</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php wp_reset_postdata(); ?>
 
-					<div class="quote-container">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/quote.svg" alt="quote sign" class="quote-icon" />
-						<blockquote>Respect your talent!</blockquote>
-					</div>
-					<p class="apply">Apply for an audition now!</p>
-				</div>
-				<div class="level" id="level-2">
-					<div class="icon-circle">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/up.svg" alt="Icon showing dancer stretching her leg up to her nose." />
-						<p>2</p>
-					</div>
 
-					<div class="level-text">
-						<div>
-							<h3>Aspire more</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Asperiores esse voluptas soluta voluptates laborum non dignissimos
-								odit et dolores nemo?
-							</p>
-						</div>
-						<a href="#" class="button">Book Workshop</a>
-					</div>
-
-					<div class="quote-container">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/quote.svg" alt="quote sign" class="quote-icon" />
-						<blockquote>Thank yourself for levelling up now!</blockquote>
-					</div>
-					<p class="apply">Registration now open for everybody!</p>
-				</div>
-
-				<div class="level" id="level-3">
-					<div class="icon-circle">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/rise.svg" alt="Icon showing dancer stretching her leg up to her nose." />
-						<p>1</p>
-					</div>
-
-					<div class="level-text">
-						<div>
-							<h3>Learn the Basics profoundly</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-								provident assumenda, rerum iusto impedit cum voluptas enim
-								veritatis blanditiis, qui ea pariatur sit?
-							</p>
-						</div>
-						<a href="#" class="button">Book Workshop</a>
-					</div>
-
-					<div class="quote-container">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/quote.svg" alt="quote sign" class="quote-icon" />
-						<blockquote>Fall in love with dancing!</blockquote>
-					</div>
-					<p class="apply">Registration now open for everybody!</p>
-				</div>
 			</div>
 		</section>
 
