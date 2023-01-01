@@ -88,7 +88,10 @@
 			if ($aboutme_query->have_posts()) :
 				while ($aboutme_query->have_posts()) : $aboutme_query->the_post();
 			?>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/aaron_2.jpg" alt="Aaron Miller sideprofile" />
+					<?php if (has_post_thumbnail()) {
+						the_post_thumbnail();
+					}
+					?>
 					<div>
 						<p class="super-headline"><?php echo get_post_custom_values('super-headline')[0] ?></p>
 						<h2><?php the_title(); ?></h2>
