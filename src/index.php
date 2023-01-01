@@ -105,35 +105,30 @@
 			<p class="super-headline">Making waves since 2004</p>
 			<h2>In the News</h2>
 			<div class="articles">
+				<?php
+				$news_query = new WP_Query(array(
+					'category_name' => 'news ', 'order' => 'ASC',
+					'orderby' => 'ID',
+				));
+				if ($news_query->have_posts()) :
+					while ($news_query->have_posts()) : $news_query->the_post();
+				?>
 
+						<article>
+							<h3>
+								<?php the_title(); ?>
+							</h3>
+							<?php if (has_post_thumbnail()) {
+								the_post_thumbnail();
+							}
+							?>
+							<p class=" text_news"><?php the_content(); ?></p>
+							<a href="" class="button">Read more</a>
+						</article>
 
-				<article>
-					<h3>
-						Sydney Dance Festival 2022
-					</h3>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/aaron_3.jpg" alt="Aaron performing at the Sydney dance festival 2022" ">
-          <p class=" text_news">Sydney Dance Festival 2022 is happening!!!</p>
-					<a href="" class="button">Read more</a>
-				</article>
-
-				<article>
-					<h3>
-						New London Workshop Oct. 2025
-					</h3>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/aaron_4.jpg" alt="Aaron at a workshop" ">
-          <p class=" text_news">Bringing a new Workshop to London!! Coming in 2025</p>
-					<a href="" class="button">Read more</a>
-				</article>
-
-				<article>
-					<h3>
-						Dance Pool 2023 sold out!
-					</h3>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/dance_group.jpg" alt="Group picture of Dance Pool" ">
-          <p class=" text_news">The Dance Pool is completely sold out! Thank YOU!</p>
-					<a href="" class="button">Read more</a>
-				</article>
-
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php wp_reset_postdata(); ?>
 			</div>
 		</section>
 	</main>
