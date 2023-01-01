@@ -38,6 +38,7 @@
 
 			<div id="level-grid">
 				<?php
+				$first = true;
 				$level_query = new WP_Query(array(
 					'category_name' => 'level ', 'order' => 'ASC',
 					'orderby' => 'ID',
@@ -69,9 +70,11 @@
 								<img src="<?php echo get_template_directory_uri(); ?>/images/quote.svg" alt="quote sign" class="quote-icon" />
 								<blockquote><?php echo get_post_custom_values('level-slogan')[0] ?></blockquote>
 							</div>
-							<p class="apply">Apply for an audition now!</p>
+							<p class="apply"><?php echo $first ? "Apply for an audition now!" : "Registration now open for everybody!" ?></p>
 						</div>
-					<?php endwhile; ?>
+					<?php
+						$first = false;
+					endwhile; ?>
 				<?php endif; ?>
 				<?php wp_reset_postdata(); ?>
 
