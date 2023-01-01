@@ -2,16 +2,10 @@
 	header {
 		font-family: "Source Sans Pro", sans-serif;
 		background-image: url("./images/aaron_5.jpg");
-		// background-position: -310px 0px;
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 90vh;
-		padding: 1rem;
 		position: relative;
-
-		img {
-			width: 100%;
-		}
 
 		.flex {
 			display: flex;
@@ -64,14 +58,9 @@
 	header {
 		font-family: "Source Sans Pro", sans-serif;
 		background-image: url("./images/aaron_1.jpg");
-		background-position: -50px 0px;
+		background-position: -120px 0px;
 		height: 558px;
-		padding: 1rem;
 		position: relative;
-
-		img {
-			width: 100%;
-		}
 
 		#aaronLogoLink {
 			text-decoration: none;
@@ -91,7 +80,7 @@
 			font-size: 38px;
 			font-weight: 300;
 			position: absolute;
-			right: 3rem;
+			right: 1rem;
 			bottom: 6rem;
 			h2 {
 				margin-bottom: 1rem;
