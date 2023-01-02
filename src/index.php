@@ -62,15 +62,6 @@
 		document.addEventListener("DOMContentLoaded", function(event) {
 			MainNav.init();
 		});
-
-		function toggleSources() {
-			let div = document.getElementById("sources");
-			if (div.style.display === "none") {
-				div.style.display = "block";
-			} else {
-				div.style.display = "none";
-			}
-		}
 	</script>
 	<?php wp_footer(); ?>
 </body>

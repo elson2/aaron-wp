@@ -351,8 +351,13 @@ table {
     opacity: 1;
     text-decoration: none;
   }
-  footer #sources {
-    display: none;
+  footer details {
+    margin: 0.5rem 0;
+  }
+  footer details summary {
+    font: normal normal 300 22px/28px Source Sans Pro;
+    color: #ffad6e;
+    margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
@@ -388,8 +393,13 @@ table {
     opacity: 1;
     text-decoration: none;
   }
-  footer #sources {
-    display: none;
+  footer details {
+    margin: 0.5rem 0;
+  }
+  footer details summary {
+    font: normal normal 300 16px/20px Source Sans Pro;
+    color: #ffad6e;
+    margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
