@@ -127,7 +127,7 @@
 								the_post_thumbnail();
 							}
 							?>
-							<div class=" text_news"><?php the_content(); ?></div>
+							<div class=" text_news"><?php the_excerpt(); ?></div>
 							<a href="<?php the_permalink(); ?>" class="button">Read more</a>
 						</article>
 
