@@ -33,7 +33,6 @@
 	<main>
 		<div id="contact-wrapper">
 			<?php echo the_content() ?>
-			<h3>Contact form</h3>
 		</div>
 	</main>
 
