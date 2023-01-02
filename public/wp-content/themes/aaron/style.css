@@ -428,6 +428,7 @@ table {
     text-transform: uppercase;
     font: normal normal 900 16px/29px Source Sans Pro;
     padding: 0.5rem 1rem;
+    color: #000;
   }
 }
 @media (min-width: 37.5rem) {
@@ -465,6 +466,8 @@ table {
     font-weight: 600;
     text-transform: uppercase;
     width: fit-content;
+    font: normal normal 600 22px/28px Source Sans Pro;
+    color: #000;
   }
 }
 @media (min-width: 37.5rem) {

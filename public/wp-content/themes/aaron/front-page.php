@@ -100,7 +100,7 @@
 						<span class="text_about">
 							<?php the_content(); ?>
 						</span>
-						<a href="<?php the_permalink(); ?>">Learn more</a>
+						<a href="<?php the_permalink(); ?>" class="button">Learn more</a>
 					</div>
 				<?php endwhile; ?>
 			<?php endif; ?>
