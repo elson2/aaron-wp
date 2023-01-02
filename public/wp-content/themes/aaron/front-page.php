@@ -24,7 +24,16 @@
 		</div>
 		<div id="heroText">
 			<h2>I believe <br />you can dance.</h2>
-			<a href="/?page_id=37" class="button">Book Workshop</a>
+			<?php
+				$contact_query = new WP_Query(array(
+					'pagename' => 'contact', 'posts_per_page' => '1'
+				));
+
+				while ($contact_query->have_posts()) : $contact_query->the_post();
+			?>
+				<a href="<?php the_permalink(); ?>" class="button">Book Workshop</a>
+
+				<?php endwhile; ?>
 		</div>
 	</header>
 
