@@ -42,6 +42,18 @@
 				<div id="content"><?php the_content(); ?></div>
 			</article>
 		<?php endif; ?>
+		<?php if (have_posts() && in_category("about_me_short")) : ?>
+			<article id="news_full_wrapper">
+				<h3>
+					<?php the_title(); ?>
+				</h3>
+				<?php if (has_post_thumbnail()) {
+					the_post_thumbnail();
+				}
+				?>
+				<div id="content"><?php the_content(); ?></div>
+			</article>
+		<?php endif; ?>
 	</main>
 	<?php get_footer(); ?>
 	<script src="<?php echo get_template_directory_uri(); ?>/main.js"></script>
