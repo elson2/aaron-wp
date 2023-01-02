@@ -1008,6 +1008,12 @@ table {
     font-size: 2rem;
     margin: 2rem 0;
   }
+  #contact-wrapper form p {
+    margin-bottom: 1rem;
+  }
+  #contact-wrapper form p input, #contact-wrapper form p textarea {
+    margin-top: 0.5rem;
+  }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #contact-wrapper {
