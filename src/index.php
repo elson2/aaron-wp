@@ -22,10 +22,11 @@
 				</ul>
 			</nav>
 		</div>
+		<?php if(get_post_custom_values('hero-text')) : ?> 
 		<div id="heroText">
 			<h2><?php echo get_post_custom_values('hero-text')[0] ?></h2>
-			<a href="#" class="button">Book Workshop</a>
 		</div>
+		<?php endif; ?>
 	</header>
 
 
@@ -42,7 +43,7 @@
 				<div id="content"><?php the_content(); ?></div>
 			</article>
 		<?php endif; ?>
-		<?php if (have_posts() && in_category("about_me_short")) : ?>
+		<?php if (have_posts() && in_category("about_me")) : ?>
 			<article id="news_full_wrapper">
 				<h3>
 					<?php the_title(); ?>

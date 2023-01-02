@@ -85,7 +85,7 @@
 		<section id="about">
 			<?php
 			$aboutme_query = new WP_Query(array(
-				'category_name' => 'about_me_short', 'posts_per_page' => '1'
+				'category_name' => 'about_me', 'posts_per_page' => '1'
 			));
 			if ($aboutme_query->have_posts()) :
 				while ($aboutme_query->have_posts()) : $aboutme_query->the_post();
