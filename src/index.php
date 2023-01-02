@@ -23,7 +23,7 @@
 			</nav>
 		</div>
 		<div id="heroText">
-			<h2><?php get_post_custom_values('hero-text')[0] ?></h2>
+			<h2><?php echo get_post_custom_values('hero-text')[0] ?></h2>
 			<a href="#" class="button">Book Workshop</a>
 		</div>
 	</header>
