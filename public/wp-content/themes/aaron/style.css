@@ -994,5 +994,34 @@ table {
     display: none;
   }
 }
+@media (min-width: 37.5rem) {
+  #contact-wrapper {
+    margin: 0 auto;
+    width: 50vw;
+    padding: 5rem 0;
+  }
+  #contact-wrapper > p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+  #contact-wrapper h3 {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #contact-wrapper {
+    padding: 3rem 1rem;
+    margin: 0 auto;
+  }
+  #contact-wrapper > p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+  #contact-wrapper h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

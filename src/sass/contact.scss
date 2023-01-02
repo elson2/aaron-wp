@@ -1,0 +1,30 @@
+@include breakpoint($desktop) {
+    #contact-wrapper{
+        margin: 0 auto;
+        width: 50vw;
+        padding: 5rem 0;
+        >p{
+            max-width: 70ch;
+            line-height: 1.5;
+        }
+        h3{
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #contact-wrapper{
+        padding: 3rem 1rem;
+        margin: 0 auto;
+        >p{
+            max-width: 70ch;
+            line-height: 1.5;
+        }
+        h3{
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+    }
+}

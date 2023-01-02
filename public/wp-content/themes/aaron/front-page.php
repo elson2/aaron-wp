@@ -24,7 +24,7 @@
 		</div>
 		<div id="heroText">
 			<h2>I believe <br />you can dance.</h2>
-			<a href="#" class="button">Book Workshop</a>
+			<a href="/?page_id=37" class="button">Book Workshop</a>
 		</div>
 	</header>
 
