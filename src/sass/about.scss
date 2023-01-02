@@ -50,7 +50,7 @@
 			height: auto;
 			object-fit: cover;
 		}
-		div {
+		>div {
 			padding: 0 10rem 0 2rem;
 			height: fit-content;
 			display: flex;
@@ -59,7 +59,6 @@
 				font-size: 22px;
 				font-weight: 300;
 				color: #363636;
-				padding-bottom: 1rem;
 				line-height: 1.5;
 				max-width: 70ch;
 			}

@@ -443,21 +443,20 @@ table {
     height: auto;
     object-fit: cover;
   }
-  #about div {
+  #about > div {
     padding: 0 10rem 0 2rem;
     height: fit-content;
     display: flex;
     flex-direction: column;
   }
-  #about div .text_about {
+  #about > div .text_about {
     font-size: 22px;
     font-weight: 300;
     color: #363636;
-    padding-bottom: 1rem;
     line-height: 1.5;
     max-width: 70ch;
   }
-  #about div a {
+  #about > div a {
     margin-top: 1rem;
     padding: 0.8rem 1.5rem;
     border: 1px solid #f4a76c;
@@ -612,6 +611,7 @@ table {
   header .flex {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
   }
   header #aaronLogoLink {
     text-decoration: none;
@@ -658,6 +658,9 @@ table {
     background-position: -120px 0px;
     height: 558px;
     position: relative;
+  }
+  header .flex {
+    padding: 1rem;
   }
   header #aaronLogoLink {
     text-decoration: none;

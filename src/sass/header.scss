@@ -10,6 +10,7 @@
 		.flex {
 			display: flex;
 			justify-content: space-between;
+			padding: 1rem;
 		}
 
 		#aaronLogoLink {
@@ -61,7 +62,11 @@
 		background-position: -120px 0px;
 		height: 558px;
 		position: relative;
-
+		
+		.flex{
+			padding: 1rem;
+		}
+		
 		#aaronLogoLink {
 			text-decoration: none;
 			text-transform: uppercase;

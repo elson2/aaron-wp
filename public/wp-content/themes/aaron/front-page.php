@@ -97,9 +97,9 @@
 					<div>
 						<p class="super-headline"><?php echo get_post_custom_values('super-headline')[0] ?></p>
 						<h2><?php the_title(); ?></h2>
-						<span class="text_about">
+						<div class="text_about">
 							<?php the_content(); ?>
-						</span>
+						</div>
 						<a href="<?php the_permalink(); ?>" class="button">Learn more</a>
 					</div>
 				<?php endwhile; ?>
